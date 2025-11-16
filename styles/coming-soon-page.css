@@ -1522,6 +1522,18 @@ h6 {
 	background-image: linear-gradient(to bottom, var(--tw-gradient-stops))
 }
 
+.hero-bg-img {
+  filter: blur(300px) !important;
+  transform: scale(5.04) !important; /* slight zoom so edges don’t show */
+}
+
+@media (min-width: 1024px) {
+  .hero-bg-img {
+    filter: blur(3px) !important;
+    transform: scale(1.05) !important;
+  }
+}
+
 .logo-wrapper img {
   /* keep the logo inside the rounded box nicely */
   display: block;
